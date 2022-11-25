@@ -124,8 +124,8 @@ const SearchBooks = () => {
                   <Card.Title>{book.title}</Card.Title>
                   <p className='small'>Authors: {book.authors}</p>
                   <Card.Text>{book.description}</Card.Text>
-                    <a target="_blank" rel="noopener noreferrer" href={book.link}>
-                    <Button>Book Link</Button>
+                    <a className="book-link" target="_blank" rel="noopener noreferrer" href={book.link}>
+                    <Button className ="btn-block book-link-btn">Book Link</Button>
                     </a>
                   {Auth.loggedIn() && (
                     <Button

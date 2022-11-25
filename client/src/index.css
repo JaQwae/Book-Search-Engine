@@ -15,3 +15,11 @@ h6 {
   font-weight: 300;
   font-style: italic;
 }
+
+.book-link-btn{
+  margin-bottom: 1rem;
+}
+
+.book-link:hover{
+  text-decoration: none;
+}
