@@ -18,7 +18,7 @@ app.use(express.json());
 
 const startApolloServer = async (typeDefs, resolvers) => {
   await server.start();
-  server.applyMiddle({ app });
+  server.applyMiddleware({ app });
 }
 
 // if we're in production, serve client/build as static assets
